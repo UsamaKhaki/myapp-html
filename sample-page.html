@@ -1,0 +1,386 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Dash-lead Admin panel</title>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
+    <!-- Favicon -->
+    <script src="https://kit.fontawesome.com/89ad3b940c.js" crossorigin="anonymous"></script>
+    <link href="./plugins/ionicons/ionicons.min.css" rel="stylesheet">
+    <link href="./plugins/typicons/typicons.css" rel="stylesheet">
+    <link href="./plugins/feather-css/feather.css" rel="stylesheet">
+    <link href="./plugins/flag-icon/flag-icon.min.css" rel="stylesheet">
+    <link href="./plugins/datatable/dataTables.bootstrap4.min.css" rel="stylesheet">
+    <link href="./plugins/datatable/responsivebootstrap4.min.css" rel="stylesheet">
+    <link href="./plugins/datatable/fileexport/buttons.bootstrap4.min.css" rel="stylesheet">
+    <link href="./css/style.css" rel="stylesheet">
+    <link href="./css/skins.css" rel="stylesheet">
+    <link href="./css/dark-style.css" rel="stylesheet">
+    <link href="./css/boxed.css" rel="stylesheet">
+    <link href="./css/dark-boxed.css" rel="stylesheet">
+    <link href="./plugins/select2/select2.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./plugins/multipleselect/multiple-select.css">
+    <link href="./plugins/sidebar/sidebar.css" rel="stylesheet">
+    <link href="./plugins/switcher/switcher.css" rel="stylesheet">
+    <link href="./plugins/switcher/demo.css" rel="stylesheet">
+</head>
+<body>
+<!--Switch-->
+<div class="switcher-wrapper">
+    <div class="demo_changer">
+        <div class="demo-icon bg_dark"><i class="fa fa-cog fa-spin  text_primary"></i></div>
+        <div class="form_holder sidebar-right1">
+            <div class="row">
+                <div class="predefined_styles">
+                    <div class="swichermainleft"><h4>Dashlead Versions</h4>
+                        <div class="pl-3 pr-3"><a href="../../../index.html" class="btn btn-success  btn-block mt-0">LTR
+                            Version</a> <a href="../../../index1.html" class="btn btn-info  btn-block">RTL Version</a>
+                        </div>
+                    </div>
+                    <div class="swichermainleft"><h4>Navigation Style</h4>
+                        <div class="pl-3 pr-3"><a class="btn btn-primary btn-block"
+                                                  href="../Horizontal-Light/index.html"> Horizontal </a> <a
+                                class="btn btn-secondary btn-block" href="../Leftmenu-Icon-Light/index.html">
+                            Left-menu </a></div>
+                    </div>
+                    <div class="swichermainleft"><h4>Theme Layout</h4>
+                        <div class="switch_section">
+                            <div class="switch-toggle d-flex"><span class="mr-auto">Light Theme</span>
+                                <div class="onoffswitch2"><input type="radio" name="onoffswitch2" id="myonoffswitch"
+                                                                 class="onoffswitch2-checkbox" checked=""> <label
+                                        for="myonoffswitch" class="onoffswitch2-label"></label></div>
+                            </div>
+                            <div class="switch-toggle d-flex"><span class="mr-auto">Dark Theme</span>
+                                <div class="onoffswitch2"><input type="radio" name="onoffswitch2" id="myonoffswitch1"
+                                                                 class="onoffswitch2-checkbox"> <label
+                                        for="myonoffswitch1" class="onoffswitch2-label"></label></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                    <div class="swichermainleft"><h4>Body Styles</h4>
+                        <div class="switch_section">
+                            <div class="switch-toggle d-flex"><span class="mr-auto">Default</span>
+                                <div class="onoffswitch2"><input type="radio" name="onoffswitch2" id="myonoffswitch13"
+                                                                 class="onoffswitch2-checkbox" checked=""> <label
+                                        for="myonoffswitch13" class="onoffswitch2-label"></label></div>
+                            </div>
+                            <div class="switch-toggle d-flex"><span class="mr-auto">Boxed</span>
+                                <div class="onoffswitch2"><input type="radio" name="onoffswitch2" id="myonoffswitch14"
+                                                                 class="onoffswitch2-checkbox"> <label
+                                        for="myonoffswitch14" class="onoffswitch2-label"></label></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swichermainleft"><h4>Header Styles Mode</h4>
+                        <div class="switch_section">
+                            <div class="switch-toggle d-flex"><span class="mr-auto">Color Header</span>
+                                <div class="onoffswitch2"><input type="radio" name="onoffswitch2" id="myonoffswitch3"
+                                                                 class="onoffswitch2-checkbox"> <label
+                                        for="myonoffswitch3" class="onoffswitch2-label"></label></div>
+                            </div>
+                            <div class="switch-toggle d-flex"><span class="mr-auto">Graident Header</span>
+                                <div class="onoffswitch2"><input type="radio" name="onoffswitch2" id="myonoffswitch4"
+                                                                 class="onoffswitch2-checkbox"> <label
+                                        for="myonoffswitch4" class="onoffswitch2-label"></label></div>
+                            </div>
+                            <div class="switch-toggle d-flex"><span class="mr-auto">Reset Header</span>
+                                <div class="onoffswitch2"><input type="radio" name="onoffswitch2" id="myonoffswitch2"
+                                                                 class="onoffswitch2-checkbox"> <label
+                                        for="myonoffswitch2" class="onoffswitch2-label"></label></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swichermainleft"><h4>Horizontalmenu Styles Mode</h4>
+                        <div class="switch_section">
+                            <div class="switch-toggle d-flex"><span class="mr-auto">Color Menu</span>
+                                <div class="onoffswitch2"><input type="radio" name="onoffswitch2" id="myonoffswitch6"
+                                                                 class="onoffswitch2-checkbox"> <label
+                                        for="myonoffswitch6" class="onoffswitch2-label"></label></div>
+                            </div>
+                            <div class="switch-toggle d-flex dark-switch"><span class="mr-auto">Dark Menu</span>
+                                <div class="onoffswitch2"><input type="radio" name="onoffswitch2" id="myonoffswitch7"
+                                                                 class="onoffswitch2-checkbox"> <label
+                                        for="myonoffswitch7" class="onoffswitch2-label"></label></div>
+                            </div>
+                            <div class="light-switch">
+                                <div class="switch-toggle d-flex"><span class="mr-auto">Light Menu</span>
+                                    <div class="onoffswitch2"><input type="radio" name="onoffswitch2"
+                                                                     id="myonoffswitch5" class="onoffswitch2-checkbox">
+                                        <label for="myonoffswitch5" class="onoffswitch2-label"></label></div>
+                                </div>
+                            </div>
+                            <div class="switch-toggle d-flex"><span class="mr-auto">Gradient-Color Menu</span>
+                                <div class="onoffswitch2"><input type="radio" name="onoffswitch2" id="myonoffswitch8"
+                                                                 class="onoffswitch2-checkbox"> <label
+                                        for="myonoffswitch8" class="onoffswitch2-label"></label></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swichermainleft border-top  mt-2 text-center">
+                        <div class="p-3"><a href="../../../index.html" class="btn btn-primary btn-block mt-0">View
+                            Demo</a> <a href="https://themeforest.net/item/dashlead-admin-panel-html-template/25087593"
+                                        class="btn btn-secondary btn-block" target="_blank">Buy Now</a> <a
+                                href="https://themeforest.net/user/sprukosoft/portfolio" class="btn btn-info btn-block"
+                                target="_blank">Our Portfolio</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--End Switch-->
+
+<!--Loader-->
+<div id="global-loader" style="display: none;">
+    <img src="./img/loader.svg" class="loader-img" alt="Loader">
+</div>
+<!--End Loader-->
+<div class="page">
+    <!--Header-->
+
+    <!--  Top bar  -->
+    <div class="main-header hor-header">
+        <div class="container">
+            <div class="main-header-left"><a class="main-header-menu-icon d-lg-none" href=""
+                                             id="mainNavShow"><span></span></a> <a class="main-logo" href="index.html">
+                <img src="./img/logo.png" class="header-brand-img desktop-logo" alt="logo"> <img
+                    src="./img/icon.png" class="header-brand-img icon-logo" alt="logo"> <img
+                    src="./img/logo-light.png" class="header-brand-img desktop-logo theme-logo"
+                    alt="logo"> <img src="./img/icon-light.png"
+                                     class="header-brand-img icon-logo theme-logo" alt="logo"> </a></div>
+            <div class="main-header-right">
+                <div class="dropdown d-md-flex header-search"><a class="nav-link icon header-search"> <i
+                        class="fe fe-search"></i> </a>
+                    <div class="dropdown-menu">
+                        <div class="main-form-search p-2"><input class="form-control" placeholder="Search"
+                                                                 type="search">
+                            <button class="btn"><i class="fe fe-search"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="dropdown d-md-flex"><a class="nav-link icon full-screen-link"> <i
+                        class="fe fe-maximize fullscreen-button"></i> </a></div>
+                <div class="dropdown main-header-notification"><a class="nav-link icon" href=""> <i
+                        class="fe fe-bell"></i> <span class="pulse bg-danger"></span> </a>
+                    <div class="dropdown-menu">
+                        <div class="header-navheading"><p class="main-notification-text">You have 1 unread
+                            notification<span class="badge badge-pill badge-primary ml-3">View all</span></p></div>
+                        <div class="main-notification-list">
+                            <div class="media new">
+                                <div class="main-img-user online"><img alt="avatar" src="./img/5.jpg">
+                                </div>
+                                <div class="media-body"><p>Congratulate <strong>Olivia James</strong> for New template
+                                    start</p><span>Oct 15 12:32pm</span></div>
+                            </div>
+                            <div class="media">
+                                <div class="main-img-user"><img alt="avatar" src="./img/2.jpg"></div>
+                                <div class="media-body"><p><strong>Joshua Gray</strong> New Message Received</p><span>Oct 13 02:56am</span>
+                                </div>
+                            </div>
+                            <div class="media">
+                                <div class="main-img-user online"><img alt="avatar" src="./img/3.jpg">
+                                </div>
+                                <div class="media-body"><p><strong>Elizabeth Lewis</strong> added new schedule realease
+                                </p><span>Oct 12 10:40pm</span></div>
+                            </div>
+                        </div>
+                        <div class="dropdown-footer"><a href="">View All Notifications</a></div>
+                    </div>
+                </div>
+                <div class="dropdown main-profile-menu"><a class="main-img-user" href=""><img alt="avatar"
+                                                                                              src="./img/1.jpg"></a>
+                    <div class="dropdown-menu">
+                        <div class="header-navheading"><h6 class="main-notification-title">Sonia Taylor</h6>
+                            <p class="main-notification-text">Web Designer</p></div>
+                        <a class="dropdown-item border-top" href=""> <i class="fe fe-user"></i> My Profile </a> <a
+                            class="dropdown-item" href=""> <i class="fe fe-edit"></i> Edit Profile </a> <a
+                            class="dropdown-item" href=""> <i class="fe fe-settings"></i> Account Settings </a> <a
+                            class="dropdown-item" href=""> <i class="fe fe-settings"></i> Support </a> <a
+                            class="dropdown-item" href=""> <i class="fe fe-compass"></i> Activity </a> <a
+                            class="dropdown-item" href="signin.html"> <i class="fe fe-power"></i> Sign Out </a></div>
+                </div>
+                <div class="dropdown d-md-flex header-settings"><a href="#" class="nav-link icon"
+                                                                   data-toggle="sidebar-right"
+                                                                   data-target=".sidebar-right"> <i
+                        class="fe fe-align-right"></i> </a></div>
+            </div>
+        </div>
+    </div>
+    <!--  End Top bar  -->
+
+    <!-- Nav menus -->
+    <div class="main-navbar sticky" style="margin-bottom: -58px;">
+        <div class="container">
+            <ul class="nav">
+                <li class="nav-item active"><a class="nav-link" href="index.html"><i class="fe fe-airplay"></i>Dashboard</a>
+                </li>
+                <li class="nav-item"><a class="nav-link with-sub" href=""><i class="fe fe-life-buoy"></i>Tables</a>
+                    <ul class="nav-sub">
+                        <li class="nav-sub-item"><a class="nav-sub-link" href="./table-basic.html">Basic Tables</a></li>
+                        <li class="nav-sub-item"><a class="nav-sub-link" href="./table-data.html">Data Tables</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item"><a class="nav-link" href="sample-page.html"><i class="fe fe-airplay"></i>Sample
+                    Page</a></li>
+                <li class="nav-item"><a class="nav-link" href="404-page.html"><i class="fe fe-airplay"></i>404</a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- End Nav menus -->
+
+    <!--End Header-->
+
+    <!--<div class="jumps-prevent" style="padding-top: 58px;"></div>-->
+
+
+    <!--Body-->
+    <div class="main-content pt-0">
+        <div class="container">
+            <div class="page-header">
+                <div><h2 class="main-content-title tx-24 mg-b-5">Empty Page</h2>
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="#">Pages</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Empty Page</li>
+                    </ol>
+                </div>
+                <div class="btn btn-list"><a class="btn ripple btn-primary" href="#"><i class="fe fe-external-link"></i>
+                    Export</a> <a class="btn ripple btn-secondary" href="#"><i class="fe fe-download"></i> Download</a>
+                    <a class="btn ripple btn-info" href="#"><i class="fe fe-help-circle"></i> Help</a> <a
+                            class="btn ripple btn-danger dropdown-toggle" href="#" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="true"> <i class="fe fe-settings"></i> Settings <i
+                            class="fas fa-caret-down ml-1"></i> </a>
+                    <div class="dropdown-menu tx-13"><a class="dropdown-item" href="#"><i class="fe fe-eye mr-2"></i>View</a>
+                        <a class="dropdown-item" href="#"><i class="fe fe-plus-circle mr-2"></i>Add</a> <a
+                                class="dropdown-item" href="#"><i class="fe fe-mail mr-2"></i>Email</a> <a
+                                class="dropdown-item" href="#"><i class="fe fe-folder-plus mr-2"></i>Save</a> <a
+                                class="dropdown-item" href="#"><i class="fe fe-trash-2 mr-2"></i>Remove</a> <a
+                                class="dropdown-item" href="#"><i class="fe fe-settings mr-2"></i>More</a></div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="card custom-card">
+                        <div class="card-body"> Typing Some text here....</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--End Body-->
+
+    <!-- Sidebar Menu -->
+    <div class="sidebar sidebar-right sidebar-animate">
+        <div class="sidebar-icon"><a href="#" class="text-right float-right text-dark fs-20" data-toggle="sidebar-right"
+                                     data-target=".sidebar-right"><i class="fe fe-x"></i></a></div>
+        <div class="sidebar-body"><h5>Todo</h5>
+            <div class="d-flex p-2"><label class="ckbox"><input checked=""
+                                                                type="checkbox"><span>Hangout With friends</span></label>
+                <span class="ml-auto"> <i class="fe fe-edit-2 text-primary mr-2" data-toggle="tooltip" title=""
+                                          data-placement="top" data-original-title="Edit"></i> <i
+                        class="fe fe-trash-2 text-danger mr-2" data-toggle="tooltip" title="" data-placement="top"
+                        data-original-title="Delete"></i> </span></div>
+            <div class="d-flex p-2 border-top"><label class="ckbox"><input type="checkbox"><span>Prepare for presentation</span></label>
+                <span class="ml-auto"> <i class="fe fe-edit-2 text-primary mr-2" data-toggle="tooltip" title=""
+                                          data-placement="top" data-original-title="Edit"></i> <i
+                        class="fe fe-trash-2 text-danger mr-2" data-toggle="tooltip" title="" data-placement="top"
+                        data-original-title="Delete"></i> </span></div>
+            <div class="d-flex p-2 border-top"><label class="ckbox"><input type="checkbox"><span>Prepare for presentation</span></label>
+                <span class="ml-auto"> <i class="fe fe-edit-2 text-primary mr-2" data-toggle="tooltip" title=""
+                                          data-placement="top" data-original-title="Edit"></i> <i
+                        class="fe fe-trash-2 text-danger mr-2" data-toggle="tooltip" title="" data-placement="top"
+                        data-original-title="Delete"></i> </span></div>
+            <div class="d-flex p-2 border-top"><label class="ckbox"><input checked="" type="checkbox"><span>System Updated</span></label>
+                <span class="ml-auto"> <i class="fe fe-edit-2 text-primary mr-2" data-toggle="tooltip" title=""
+                                          data-placement="top" data-original-title="Edit"></i> <i
+                        class="fe fe-trash-2 text-danger mr-2" data-toggle="tooltip" title="" data-placement="top"
+                        data-original-title="Delete"></i> </span></div>
+            <div class="d-flex p-2 border-top"><label class="ckbox"><input
+                    type="checkbox"><span>Do something more</span></label> <span class="ml-auto"> <i
+                    class="fe fe-edit-2 text-primary mr-2" data-toggle="tooltip" title="" data-placement="top"
+                    data-original-title="Edit"></i> <i class="fe fe-trash-2 text-danger mr-2" data-toggle="tooltip"
+                                                       title="" data-placement="top" data-original-title="Delete"></i> </span>
+            </div>
+            <div class="d-flex p-2 border-top"><label class="ckbox"><input
+                    type="checkbox"><span>System Updated</span></label> <span class="ml-auto"> <i
+                    class="fe fe-edit-2 text-primary mr-2" data-toggle="tooltip" title="" data-placement="top"
+                    data-original-title="Edit"></i> <i class="fe fe-trash-2 text-danger mr-2" data-toggle="tooltip"
+                                                       title="" data-placement="top" data-original-title="Delete"></i> </span>
+            </div>
+            <div class="d-flex p-2 border-top"><label class="ckbox"><input
+                    type="checkbox"><span>Find an Idea</span></label> <span class="ml-auto"> <i
+                    class="fe fe-edit-2 text-primary mr-2" data-toggle="tooltip" title="" data-placement="top"
+                    data-original-title="Edit"></i> <i class="fe fe-trash-2 text-danger mr-2" data-toggle="tooltip"
+                                                       title="" data-placement="top" data-original-title="Delete"></i> </span>
+            </div>
+            <div class="d-flex p-2 border-top mb-4 border-bottom"><label class="ckbox"><input type="checkbox"><span>Project review</span></label>
+                <span class="ml-auto"> <i class="fe fe-edit-2 text-primary mr-2" data-toggle="tooltip" title=""
+                                          data-placement="top" data-original-title="Edit"></i> <i
+                        class="fe fe-trash-2 text-danger mr-2" data-toggle="tooltip" title="" data-placement="top"
+                        data-original-title="Delete"></i> </span></div>
+            <h5 class="pt-2">Overview</h5>
+            <div class="p-2">
+                <div class="main-traffic-detail-item">
+                    <div><span>Founder &amp; CEO</span> <span>24</span></div>
+                    <div class="progress">
+                        <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="20"
+                             class="progress-bar progress-bar-xs wd-20p" role="progressbar"></div>
+                    </div><!-- progress --> </div>
+                <div class="main-traffic-detail-item">
+                    <div><span>UX Designer</span> <span>1</span></div>
+                    <div class="progress">
+                        <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="15"
+                             class="progress-bar progress-bar-xs bg-secondary wd-15p" role="progressbar"></div>
+                    </div><!-- progress --> </div>
+                <div class="main-traffic-detail-item">
+                    <div><span>Recruitment</span> <span>87</span></div>
+                    <div class="progress">
+                        <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="45"
+                             class="progress-bar progress-bar-xs bg-success wd-45p" role="progressbar"></div>
+                    </div><!-- progress --> </div>
+                <div class="main-traffic-detail-item">
+                    <div><span>Software Engineer</span> <span>32</span></div>
+                    <div class="progress">
+                        <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="25"
+                             class="progress-bar progress-bar-xs bg-info wd-25p" role="progressbar"></div>
+                    </div><!-- progress --> </div>
+                <div class="main-traffic-detail-item">
+                    <div><span>Project Manager</span> <span>32</span></div>
+                    <div class="progress">
+                        <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="25"
+                             class="progress-bar progress-bar-xs bg-danger wd-25p" role="progressbar"></div>
+                    </div><!-- progress --> </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Sidebar Menu -->
+
+
+</div>
+
+<!--Footer-->
+<script src="./plugins/jquery/jquery.min.js"></script>
+<script src="./plugins/bootstrap/bootstrap.bundle.min.js"></script>
+<script src="./plugins/ionicons/ionicons.js"></script>
+<script src="./plugins/select2/select2.min.js"></script>
+<script src="./plugins/multipleselect/multiple-select.js"></script>
+<script src="./plugins/multipleselect/multi-select.js"></script>
+<script src="./plugins/sidebar/sidebar.js"></script>
+<script src="./plugins/perfect-scrollbar/perfect-scrollbar.min.js"></script>
+<script src="./js/sticky.js"></script>
+<script src="./js/custom.js"></script>
+<script src="./plugins/switcher/switcher.js"></script>
+<script src="./plugins/datatable/jquery.dataTables.min.js"></script>
+<script src="./plugins/datatable/dataTables.bootstrap4.min.js"></script>
+<!--End Footer-->
+
+<script>
+    $('#example1_wrapper').dataTable();
+</script>
+
+</body>
+</html>

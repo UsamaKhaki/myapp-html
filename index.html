@@ -1,0 +1,705 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Dash-lead Admin panel</title>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
+    <!-- Favicon -->
+    <script src="https://kit.fontawesome.com/89ad3b940c.js" crossorigin="anonymous"></script>
+    <link href="./plugins/ionicons/ionicons.min.css" rel="stylesheet">
+    <link href="./plugins/typicons/typicons.css" rel="stylesheet">
+    <link href="./plugins/feather-css/feather.css" rel="stylesheet">
+    <link href="./plugins/flag-icon/flag-icon.min.css" rel="stylesheet">
+    <link href="./css/style.css" rel="stylesheet">
+    <link href="./css/skins.css" rel="stylesheet">
+    <link href="./css/dark-style.css" rel="stylesheet">
+    <link href="./css/boxed.css" rel="stylesheet">
+    <link href="./css/dark-boxed.css" rel="stylesheet">
+    <link href="./plugins/select2/select2.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./plugins/multipleselect/multiple-select.css">
+    <link href="./plugins/sidebar/sidebar.css" rel="stylesheet">
+    <link href="./plugins/switcher/switcher.css" rel="stylesheet">
+    <link href="./plugins/switcher/demo.css" rel="stylesheet">
+</head>
+<body>
+<!--Switch-->
+<div class="switcher-wrapper">
+    <div class="demo_changer">
+        <div class="demo-icon bg_dark"><i class="fa fa-cog fa-spin  text_primary"></i></div>
+        <div class="form_holder sidebar-right1">
+            <div class="row">
+                <div class="predefined_styles">
+                    <div class="swichermainleft"><h4>Dashlead Versions</h4>
+                        <div class="pl-3 pr-3"><a href="../../../index.html" class="btn btn-success  btn-block mt-0">LTR
+                            Version</a> <a href="../../../index1.html" class="btn btn-info  btn-block">RTL Version</a>
+                        </div>
+                    </div>
+                    <div class="swichermainleft"><h4>Navigation Style</h4>
+                        <div class="pl-3 pr-3"><a class="btn btn-primary btn-block"
+                                                  href="../Horizontal-Light/index.html"> Horizontal </a> <a
+                                class="btn btn-secondary btn-block" href="../Leftmenu-Icon-Light/index.html">
+                            Left-menu </a></div>
+                    </div>
+                    <div class="swichermainleft"><h4>Theme Layout</h4>
+                        <div class="switch_section">
+                            <div class="switch-toggle d-flex"><span class="mr-auto">Light Theme</span>
+                                <div class="onoffswitch2"><input type="radio" name="onoffswitch2" id="myonoffswitch"
+                                                                 class="onoffswitch2-checkbox" checked=""> <label
+                                        for="myonoffswitch" class="onoffswitch2-label"></label></div>
+                            </div>
+                            <div class="switch-toggle d-flex"><span class="mr-auto">Dark Theme</span>
+                                <div class="onoffswitch2"><input type="radio" name="onoffswitch2" id="myonoffswitch1"
+                                                                 class="onoffswitch2-checkbox"> <label
+                                        for="myonoffswitch1" class="onoffswitch2-label"></label></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                    <div class="swichermainleft"><h4>Body Styles</h4>
+                        <div class="switch_section">
+                            <div class="switch-toggle d-flex"><span class="mr-auto">Default</span>
+                                <div class="onoffswitch2"><input type="radio" name="onoffswitch2" id="myonoffswitch13"
+                                                                 class="onoffswitch2-checkbox" checked=""> <label
+                                        for="myonoffswitch13" class="onoffswitch2-label"></label></div>
+                            </div>
+                            <div class="switch-toggle d-flex"><span class="mr-auto">Boxed</span>
+                                <div class="onoffswitch2"><input type="radio" name="onoffswitch2" id="myonoffswitch14"
+                                                                 class="onoffswitch2-checkbox"> <label
+                                        for="myonoffswitch14" class="onoffswitch2-label"></label></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swichermainleft"><h4>Header Styles Mode</h4>
+                        <div class="switch_section">
+                            <div class="switch-toggle d-flex"><span class="mr-auto">Color Header</span>
+                                <div class="onoffswitch2"><input type="radio" name="onoffswitch2" id="myonoffswitch3"
+                                                                 class="onoffswitch2-checkbox"> <label
+                                        for="myonoffswitch3" class="onoffswitch2-label"></label></div>
+                            </div>
+                            <div class="switch-toggle d-flex"><span class="mr-auto">Graident Header</span>
+                                <div class="onoffswitch2"><input type="radio" name="onoffswitch2" id="myonoffswitch4"
+                                                                 class="onoffswitch2-checkbox"> <label
+                                        for="myonoffswitch4" class="onoffswitch2-label"></label></div>
+                            </div>
+                            <div class="switch-toggle d-flex"><span class="mr-auto">Reset Header</span>
+                                <div class="onoffswitch2"><input type="radio" name="onoffswitch2" id="myonoffswitch2"
+                                                                 class="onoffswitch2-checkbox"> <label
+                                        for="myonoffswitch2" class="onoffswitch2-label"></label></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swichermainleft"><h4>Horizontalmenu Styles Mode</h4>
+                        <div class="switch_section">
+                            <div class="switch-toggle d-flex"><span class="mr-auto">Color Menu</span>
+                                <div class="onoffswitch2"><input type="radio" name="onoffswitch2" id="myonoffswitch6"
+                                                                 class="onoffswitch2-checkbox"> <label
+                                        for="myonoffswitch6" class="onoffswitch2-label"></label></div>
+                            </div>
+                            <div class="switch-toggle d-flex dark-switch"><span class="mr-auto">Dark Menu</span>
+                                <div class="onoffswitch2"><input type="radio" name="onoffswitch2" id="myonoffswitch7"
+                                                                 class="onoffswitch2-checkbox"> <label
+                                        for="myonoffswitch7" class="onoffswitch2-label"></label></div>
+                            </div>
+                            <div class="light-switch">
+                                <div class="switch-toggle d-flex"><span class="mr-auto">Light Menu</span>
+                                    <div class="onoffswitch2"><input type="radio" name="onoffswitch2"
+                                                                     id="myonoffswitch5" class="onoffswitch2-checkbox">
+                                        <label for="myonoffswitch5" class="onoffswitch2-label"></label></div>
+                                </div>
+                            </div>
+                            <div class="switch-toggle d-flex"><span class="mr-auto">Gradient-Color Menu</span>
+                                <div class="onoffswitch2"><input type="radio" name="onoffswitch2" id="myonoffswitch8"
+                                                                 class="onoffswitch2-checkbox"> <label
+                                        for="myonoffswitch8" class="onoffswitch2-label"></label></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swichermainleft border-top  mt-2 text-center">
+                        <div class="p-3"><a href="../../../index.html" class="btn btn-primary btn-block mt-0">View
+                            Demo</a> <a href="https://themeforest.net/item/dashlead-admin-panel-html-template/25087593"
+                                        class="btn btn-secondary btn-block" target="_blank">Buy Now</a> <a
+                                href="https://themeforest.net/user/sprukosoft/portfolio" class="btn btn-info btn-block"
+                                target="_blank">Our Portfolio</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--End Switch-->
+
+<!--Loader-->
+<div id="global-loader" style="display: none;">
+    <img src="./img/loader.svg" class="loader-img" alt="Loader">
+</div>
+<!--End Loader-->
+<div class="page">
+    <!--Header-->
+
+    <!--  Top bar  -->
+    <div class="main-header hor-header">
+        <div class="container">
+            <div class="main-header-left"><a class="main-header-menu-icon d-lg-none" href=""
+                                             id="mainNavShow"><span></span></a> <a class="main-logo" href="index.html">
+                <img src="./img/logo.png" class="header-brand-img desktop-logo" alt="logo"> <img
+                    src="./img/icon.png" class="header-brand-img icon-logo" alt="logo"> <img
+                    src="./img/logo-light.png" class="header-brand-img desktop-logo theme-logo"
+                    alt="logo"> <img src="./img/icon-light.png"
+                                     class="header-brand-img icon-logo theme-logo" alt="logo"> </a></div>
+            <div class="main-header-right">
+                <div class="dropdown d-md-flex header-search"><a class="nav-link icon header-search"> <i
+                        class="fe fe-search"></i> </a>
+                    <div class="dropdown-menu">
+                        <div class="main-form-search p-2"><input class="form-control" placeholder="Search"
+                                                                 type="search">
+                            <button class="btn"><i class="fe fe-search"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="dropdown d-md-flex"><a class="nav-link icon full-screen-link"> <i
+                        class="fe fe-maximize fullscreen-button"></i> </a></div>
+                <div class="dropdown main-header-notification"><a class="nav-link icon" href=""> <i
+                        class="fe fe-bell"></i> <span class="pulse bg-danger"></span> </a>
+                    <div class="dropdown-menu">
+                        <div class="header-navheading"><p class="main-notification-text">You have 1 unread
+                            notification<span class="badge badge-pill badge-primary ml-3">View all</span></p></div>
+                        <div class="main-notification-list">
+                            <div class="media new">
+                                <div class="main-img-user online"><img alt="avatar" src="./img/5.jpg">
+                                </div>
+                                <div class="media-body"><p>Congratulate <strong>Olivia James</strong> for New template
+                                    start</p><span>Oct 15 12:32pm</span></div>
+                            </div>
+                            <div class="media">
+                                <div class="main-img-user"><img alt="avatar" src="./img/2.jpg"></div>
+                                <div class="media-body"><p><strong>Joshua Gray</strong> New Message Received</p><span>Oct 13 02:56am</span>
+                                </div>
+                            </div>
+                            <div class="media">
+                                <div class="main-img-user online"><img alt="avatar" src="./img/3.jpg">
+                                </div>
+                                <div class="media-body"><p><strong>Elizabeth Lewis</strong> added new schedule realease
+                                </p><span>Oct 12 10:40pm</span></div>
+                            </div>
+                        </div>
+                        <div class="dropdown-footer"><a href="">View All Notifications</a></div>
+                    </div>
+                </div>
+                <div class="dropdown main-profile-menu"><a class="main-img-user" href=""><img alt="avatar"
+                                                                                              src="./img/1.jpg"></a>
+                    <div class="dropdown-menu">
+                        <div class="header-navheading"><h6 class="main-notification-title">Sonia Taylor</h6>
+                            <p class="main-notification-text">Web Designer</p></div>
+                        <a class="dropdown-item border-top" href=""> <i class="fe fe-user"></i> My Profile </a> <a
+                            class="dropdown-item" href=""> <i class="fe fe-edit"></i> Edit Profile </a> <a
+                            class="dropdown-item" href=""> <i class="fe fe-settings"></i> Account Settings </a> <a
+                            class="dropdown-item" href=""> <i class="fe fe-settings"></i> Support </a> <a
+                            class="dropdown-item" href=""> <i class="fe fe-compass"></i> Activity </a> <a
+                            class="dropdown-item" href="signin.html"> <i class="fe fe-power"></i> Sign Out </a></div>
+                </div>
+                <div class="dropdown d-md-flex header-settings"><a href="#" class="nav-link icon"
+                                                                   data-toggle="sidebar-right"
+                                                                   data-target=".sidebar-right"> <i
+                        class="fe fe-align-right"></i> </a></div>
+            </div>
+        </div>
+    </div>
+    <!--  End Top bar  -->
+
+    <!-- Nav menus -->
+    <div class="main-navbar sticky" style="margin-bottom: -58px;">
+        <div class="container">
+            <ul class="nav">
+                <li class="nav-item active"><a class="nav-link" href="index.html"><i class="fe fe-airplay"></i>Dashboard</a></li>
+                <li class="nav-item"><a class="nav-link with-sub" href=""><i class="fe fe-life-buoy"></i>Tables</a>
+                    <ul class="nav-sub">
+                        <li class="nav-sub-item"><a class="nav-sub-link" href="./table-basic.html">Basic Tables</a></li>
+                        <li class="nav-sub-item"><a class="nav-sub-link" href="./table-data.html">Data Tables</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item"><a class="nav-link" href="sample-page.html"><i class="fe fe-airplay"></i>Sample Page</a></li>
+                <li class="nav-item"><a class="nav-link" href="404-page.html"><i class="fe fe-airplay"></i>404</a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- End Nav menus -->
+
+    <!--End Header-->
+
+    <!--<div class="jumps-prevent" style="padding-top: 58px;"></div>-->
+
+
+    <!--Body-->
+    <div class="main-content pt-0">
+        <div class="container">
+            <div class="page-header">
+                <div><h2 class="main-content-title tx-24 mg-b-5">Welcome To Dashboard</h2>
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="#">Home</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Sales Dashboard</li>
+                    </ol>
+                </div>
+                <div class="d-flex">
+                    <div class="mr-2"><a class="btn ripple btn-outline-primary dropdown-toggle mb-0" href="#"
+                                         data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"> <i
+                            class="fe fe-external-link"></i> Export <i class="fas fa-caret-down ml-1"></i> </a>
+                        <div class="dropdown-menu tx-13"><a class="dropdown-item" href="#"><i
+                                class="far fa-file-pdf mr-2"></i>Export as Pdf</a> <a class="dropdown-item" href="#"><i
+                                class="far fa-image mr-2"></i>Export as Image</a> <a class="dropdown-item" href="#"><i
+                                class="far fa-file-excel mr-2"></i>Export as Excel</a></div>
+                    </div>
+                    <div class=""><a href="#" class="btn ripple btn-secondary navresponsive-toggler mb-0"
+                                     data-toggle="collapse" data-target="#navbarSupportedContent"
+                                     aria-controls="navbarSupportedContent" aria-expanded="false"
+                                     aria-label="Toggle navigation"> <i class="fe fe-filter mr-1"></i> Filter <i
+                            class="fas fa-caret-down ml-1"></i> </a></div>
+                </div>
+            </div>
+            <div class="row row-sm">
+                <div class="col-sm-6 col-xl-3 col-lg-6">
+                    <div class="card custom-card">
+                        <div class="card-body dash1">
+                            <div class="d-flex"><p class="mb-1 tx-inverse">Number Of Sales</p>
+                                <div class="ml-auto"><i class="fas fa-chart-line fs-20 text-primary"></i></div>
+                            </div>
+                            <div><h3 class="dash-25">568</h3></div>
+                            <div class="progress mb-1">
+                                <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="70"
+                                     class="progress-bar progress-bar-xs wd-70p" role="progressbar"></div>
+                            </div>
+                            <div class="expansion-label d-flex"><span class="text-muted">Last Month</span> <span
+                                    class="ml-auto"><i class="fas fa-caret-up mr-1 text-success"></i>0.7%</span></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-xl-3 col-lg-6">
+                    <div class="card custom-card">
+                        <div class="card-body dash1">
+                            <div class="d-flex"><p class="mb-1 tx-inverse">New Revenue</p>
+                                <div class="ml-auto"><i class="fab fa-rev fs-20 text-secondary"></i></div>
+                            </div>
+                            <div><h3 class="dash-25">$12,897</h3></div>
+                            <div class="progress mb-1">
+                                <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="70"
+                                     class="progress-bar progress-bar-xs wd-60p bg-secondary" role="progressbar"></div>
+                            </div>
+                            <div class="expansion-label d-flex"><span class="text-muted">Last Month</span> <span
+                                    class="ml-auto"><i class="fas fa-caret-down mr-1 text-danger"></i>0.43%</span></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-xl-3 col-lg-6">
+                    <div class="card custom-card">
+                        <div class="card-body dash1">
+                            <div class="d-flex"><p class="mb-1 tx-inverse">Total Cost</p>
+                                <div class="ml-auto"><i class="fas fa-dollar-sign fs-20 text-success"></i></div>
+                            </div>
+                            <div><h3 class="dash-25">$11,234</h3></div>
+                            <div class="progress mb-1">
+                                <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="70"
+                                     class="progress-bar progress-bar-xs wd-50p bg-success" role="progressbar"></div>
+                            </div>
+                            <div class="expansion-label d-flex text-muted"><span class="text-muted">Last Month</span>
+                                <span class="ml-auto"><i class="fas fa-caret-down mr-1 text-danger"></i>1.44%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-xl-3 col-lg-6">
+                    <div class="card custom-card">
+                        <div class="card-body dash1">
+                            <div class="d-flex"><p class="mb-1 tx-inverse">Profit By Sale</p>
+                                <div class="ml-auto"><i class="fas fa-signal fs-20 text-info"></i></div>
+                            </div>
+                            <div><h3 class="dash-25">$789</h3></div>
+                            <div class="progress mb-1">
+                                <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="70"
+                                     class="progress-bar progress-bar-xs wd-40p bg-info" role="progressbar"></div>
+                            </div>
+                            <div class="expansion-label d-flex text-muted"><span class="text-muted">Last Month</span>
+                                <span class="ml-auto"><i class="fas fa-caret-up mr-1 text-success"></i>0.9%</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row row-sm">
+                <div class="col-sm-12 col-xl-4 col-lg-4 mb-3">
+                    <div class="card custom-card mb-0 h-100">
+                        <div class="card-body">
+                            <div><h6 class="card-title mb-1">Activity</h6>
+                                <p class="text-muted mb-0 card-sub-title">Nemo enim ipsam voluptatem fugit sequi
+                                    nesciunt.</p></div>
+                        </div>
+                        <div class="card-body">
+                            <div class="activity-block">
+                                <ul class="task-list">
+                                    <li><i class="task-icon bg-success"></i> <h6>Successful Purchase<small
+                                            class="float-right text-muted tx-11">29 Oct 2019</small></h6> <span
+                                            class="text-muted tx-12">Order ID: #4567</span></li>
+                                    <li><i class="task-icon bg-secondary"></i> <h6>New Registered Seller<small
+                                            class="float-right text-muted tx-11">25 Oct 2019</small></h6> <span
+                                            class="text-muted tx-12">User ID: #8976</span></li>
+                                    <li><i class="task-icon bg-primary"></i> <h6>Order Verification<small
+                                            class="float-right text-muted tx-11">14 Oct 2019</small></h6> <span
+                                            class="text-muted tx-12">Order ID: #6290</span></li>
+                                    <li><i class="task-icon bg-info"></i> <h6>New Item Added<small
+                                            class="float-right text-muted tx-11">02 Oct 2019</small></h6> <span
+                                            class="text-muted tx-12">Item ID: #0235</span></li>
+                                    <li><i class="task-icon bg-danger"></i> <h6>Purchase Cancellation<small
+                                            class="float-right text-muted tx-11">28 Sep 2019</small></h6> <span
+                                            class="text-muted tx-12">Order ID: #1905</span></li>
+                                    <li class="mb-0"><i class="task-icon bg-warning"></i> <h6>Overdue Shipments<small
+                                            class="float-right text-muted tx-11">25 Sep 2019</small></h6> <span
+                                            class="text-muted tx-12">Order ID: #8902</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-xl-4 col-lg-4 mb-3">
+                    <div class="card custom-card mb-0 h-100">
+                        <div class="card-body">
+                            <div><h6 class="card-title mb-1">Top Users Conversion Rate</h6>
+                                <p class="text-muted mb-0 card-sub-title">Nemo enim ipsam voluptatem fugit sequi
+                                    nesciunt.</p></div>
+                        </div>
+                        <div class="user-manager scroll-widget border-top">
+                            <div class="table-responsive">
+                                <table class="table mg-b-0">
+                                    <tbody>
+                                    <tr>
+                                        <td class="bd-t-0">
+                                            <div class="main-img-user"><img alt="avatar"
+                                                                            src="./img/2.jpg"></div>
+                                        </td>
+                                        <td class="bd-t-0"><h6 class="mg-b-0">Socrates Itumay</h6><small
+                                                class="tx-11 tx-gray-500">Sales Manager1</small></td>
+                                        <td class="bd-t-0"><h6 class="mg-b-0 font-weight-bold">34%</h6><small
+                                                class="tx-11 tx-gray-500">Conversion Rate</small></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="main-img-user"><img alt="avatar"
+                                                                            src="./img/3.jpg"></div>
+                                        </td>
+                                        <td><h6 class="mg-b-0">Reynante Labares</h6><small class="tx-11 tx-gray-500">Sales
+                                            Manager2</small></td>
+                                        <td><h6 class="mg-b-0 font-weight-bold">22%</h6><small
+                                                class="tx-11 tx-gray-500">Conversion Rate</small></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="main-img-user"><img alt="avatar"
+                                                                            src="./img/5.jpg"></div>
+                                        </td>
+                                        <td><h6 class="mg-b-0">Mariane Galeon</h6><small class="tx-11 tx-gray-500">Sales
+                                            Manager4</small></td>
+                                        <td><h6 class="mg-b-0 font-weight-bold">15%</h6><small
+                                                class="tx-11 tx-gray-500">Conversion Rate</small></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="main-img-user"><img alt="avatar"
+                                                                            src="./img/5.jpg"></div>
+                                        </td>
+                                        <td><h6 class="mg-b-0">Mariane Galeon</h6><small class="tx-11 tx-gray-500">Sales
+                                            Manager4</small></td>
+                                        <td><h6 class="mg-b-0 font-weight-bold">15%</h6><small
+                                                class="tx-11 tx-gray-500">Conversion Rate</small></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="main-img-user"><img alt="avatar"
+                                                                            src="./img/5.jpg"></div>
+                                        </td>
+                                        <td><h6 class="mg-b-0">Mariane Galeon</h6><small class="tx-11 tx-gray-500">Sales
+                                            Manager4</small></td>
+                                        <td><h6 class="mg-b-0 font-weight-bold">15%</h6><small
+                                                class="tx-11 tx-gray-500">Conversion Rate</small></td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-xl-4 col-lg-4 mb-3">
+                    <div class="card custom-card mb-0 h-100">
+                        <div class="card-body">
+                            <div><h6 class="card-title mb-1">Top Users Conversion Rate</h6>
+                                <p class="text-muted mb-0 card-sub-title">Nemo enim ipsam voluptatem fugit sequi
+                                    nesciunt.</p></div>
+                        </div>
+                        <div class="user-manager scroll-widget border-top">
+                            <div class="table-responsive">
+                                <table class="table mg-b-0">
+                                    <tbody>
+                                    <tr>
+                                        <td class="bd-t-0">
+                                            <div class="main-img-user"><img alt="avatar"
+                                                                            src="./img/2.jpg"></div>
+                                        </td>
+                                        <td class="bd-t-0"><h6 class="mg-b-0">Socrates Itumay</h6><small
+                                                class="tx-11 tx-gray-500">Sales Manager1</small></td>
+                                        <td class="bd-t-0"><h6 class="mg-b-0 font-weight-bold">34%</h6><small
+                                                class="tx-11 tx-gray-500">Conversion Rate</small></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="main-img-user"><img alt="avatar"
+                                                                            src="./img/3.jpg"></div>
+                                        </td>
+                                        <td><h6 class="mg-b-0">Reynante Labares</h6><small class="tx-11 tx-gray-500">Sales
+                                            Manager2</small></td>
+                                        <td><h6 class="mg-b-0 font-weight-bold">22%</h6><small
+                                                class="tx-11 tx-gray-500">Conversion Rate</small></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="main-img-user"><img alt="avatar"
+                                                                            src="./img/5.jpg"></div>
+                                        </td>
+                                        <td><h6 class="mg-b-0">Mariane Galeon</h6><small class="tx-11 tx-gray-500">Sales
+                                            Manager4</small></td>
+                                        <td><h6 class="mg-b-0 font-weight-bold">15%</h6><small
+                                                class="tx-11 tx-gray-500">Conversion Rate</small></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="main-img-user"><img alt="avatar"
+                                                                            src="./img/5.jpg"></div>
+                                        </td>
+                                        <td><h6 class="mg-b-0">Mariane Galeon</h6><small class="tx-11 tx-gray-500">Sales
+                                            Manager4</small></td>
+                                        <td><h6 class="mg-b-0 font-weight-bold">15%</h6><small
+                                                class="tx-11 tx-gray-500">Conversion Rate</small></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="main-img-user"><img alt="avatar"
+                                                                            src="./img/5.jpg"></div>
+                                        </td>
+                                        <td><h6 class="mg-b-0">Mariane Galeon</h6><small class="tx-11 tx-gray-500">Sales
+                                            Manager4</small></td>
+                                        <td><h6 class="mg-b-0 font-weight-bold">15%</h6><small
+                                                class="tx-11 tx-gray-500">Conversion Rate</small></td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row row-sm">
+                <div class="col-sm-12 col-xl-12 col-lg-12">
+                    <div class="card custom-card">
+                        <div class="card-body">
+                            <div><h6 class="card-title mb-1">Product Summary</h6>
+                                <p class="text-muted card-sub-title">Nemo enim ipsam voluptatem fugit sequi
+                                    nesciunt.</p></div>
+                            <div class="table-responsive">
+                                <table class="table table-bordered text-nowrap mb-0">
+                                    <thead>
+                                    <tr>
+                                        <th>#No</th>
+                                        <th>Client Name</th>
+                                        <th>Product ID</th>
+                                        <th>Product</th>
+                                        <th>Product Cost</th>
+                                        <th>Payment Mode</th>
+                                        <th>Status</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <td>#01</td>
+                                        <td>Sean Black</td>
+                                        <td>PRO12345</td>
+                                        <td>Mi LED Smart TV 4A 80</td>
+                                        <td>$14,500</td>
+                                        <td>Online Payment</td>
+                                        <td><span class="badge badge-success">Delivered</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>#02</td>
+                                        <td>Evan Rees</td>
+                                        <td>PRO8765</td>
+                                        <td>Thomson R9 122cm (48 inch) Full HD LED TV</td>
+                                        <td>$30,000</td>
+                                        <td>Cash on delivered</td>
+                                        <td><span class="badge badge-primary">Add Cart</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>#03</td>
+                                        <td>David Wallace</td>
+                                        <td>PRO54321</td>
+                                        <td>Vu 80cm (32 inch) HD Ready LED TV</td>
+                                        <td>$13,200</td>
+                                        <td>Online Payment</td>
+                                        <td><span class="badge badge-secondary">Pending</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>#04</td>
+                                        <td>Julia Bower</td>
+                                        <td>PRO97654</td>
+                                        <td>Micromax 81cm (32 inch) HD Ready LED TV</td>
+                                        <td>$15,100</td>
+                                        <td>Cash on delivered</td>
+                                        <td><span class="badge badge-info">Delivering</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>#05</td>
+                                        <td>Kevin James</td>
+                                        <td>PRO4532</td>
+                                        <td>HP 200 Mouse &amp; Wireless Laptop Keyboard</td>
+                                        <td>$5,987</td>
+                                        <td>Online Payment</td>
+                                        <td><span class="badge badge-danger">Shipped</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>#06</td>
+                                        <td>Theresa Wright</td>
+                                        <td>PRO6789</td>
+                                        <td>Digisol DG-HR3400 Router</td>
+                                        <td>$11,987</td>
+                                        <td>Cash on delivered</td>
+                                        <td><span class="badge badge-secondary">Delivering</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>#07</td>
+                                        <td>Sebastian Black</td>
+                                        <td>PRO4567</td>
+                                        <td>Dell WM118 Wireless Optical Mouse</td>
+                                        <td>$4,700</td>
+                                        <td>Online Payment</td>
+                                        <td><span class="badge badge-info">Add to Cart</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>#08</td>
+                                        <td>Kevin Glover</td>
+                                        <td>PRO32156</td>
+                                        <td>Dell 16 inch Laptop Backpack</td>
+                                        <td>$678</td>
+                                        <td>Cash On delivered</td>
+                                        <td><span class="badge badge-success">Delivered</span></td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--End Body-->
+
+    <!-- Sidebar Menu -->
+        <div class="sidebar sidebar-right sidebar-animate">
+            <div class="sidebar-icon"><a href="#" class="text-right float-right text-dark fs-20" data-toggle="sidebar-right"
+                                         data-target=".sidebar-right"><i class="fe fe-x"></i></a></div>
+            <div class="sidebar-body"><h5>Todo</h5>
+                <div class="d-flex p-2"><label class="ckbox"><input checked=""
+                                                                    type="checkbox"><span>Hangout With friends</span></label>
+                    <span class="ml-auto"> <i class="fe fe-edit-2 text-primary mr-2" data-toggle="tooltip" title=""
+                                              data-placement="top" data-original-title="Edit"></i> <i
+                            class="fe fe-trash-2 text-danger mr-2" data-toggle="tooltip" title="" data-placement="top"
+                            data-original-title="Delete"></i> </span></div>
+                <div class="d-flex p-2 border-top"><label class="ckbox"><input type="checkbox"><span>Prepare for presentation</span></label>
+                    <span class="ml-auto"> <i class="fe fe-edit-2 text-primary mr-2" data-toggle="tooltip" title=""
+                                              data-placement="top" data-original-title="Edit"></i> <i
+                            class="fe fe-trash-2 text-danger mr-2" data-toggle="tooltip" title="" data-placement="top"
+                            data-original-title="Delete"></i> </span></div>
+                <div class="d-flex p-2 border-top"><label class="ckbox"><input type="checkbox"><span>Prepare for presentation</span></label>
+                    <span class="ml-auto"> <i class="fe fe-edit-2 text-primary mr-2" data-toggle="tooltip" title=""
+                                              data-placement="top" data-original-title="Edit"></i> <i
+                            class="fe fe-trash-2 text-danger mr-2" data-toggle="tooltip" title="" data-placement="top"
+                            data-original-title="Delete"></i> </span></div>
+                <div class="d-flex p-2 border-top"><label class="ckbox"><input checked="" type="checkbox"><span>System Updated</span></label>
+                    <span class="ml-auto"> <i class="fe fe-edit-2 text-primary mr-2" data-toggle="tooltip" title=""
+                                              data-placement="top" data-original-title="Edit"></i> <i
+                            class="fe fe-trash-2 text-danger mr-2" data-toggle="tooltip" title="" data-placement="top"
+                            data-original-title="Delete"></i> </span></div>
+                <div class="d-flex p-2 border-top"><label class="ckbox"><input
+                        type="checkbox"><span>Do something more</span></label> <span class="ml-auto"> <i
+                        class="fe fe-edit-2 text-primary mr-2" data-toggle="tooltip" title="" data-placement="top"
+                        data-original-title="Edit"></i> <i class="fe fe-trash-2 text-danger mr-2" data-toggle="tooltip"
+                                                           title="" data-placement="top" data-original-title="Delete"></i> </span>
+                </div>
+                <div class="d-flex p-2 border-top"><label class="ckbox"><input
+                        type="checkbox"><span>System Updated</span></label> <span class="ml-auto"> <i
+                        class="fe fe-edit-2 text-primary mr-2" data-toggle="tooltip" title="" data-placement="top"
+                        data-original-title="Edit"></i> <i class="fe fe-trash-2 text-danger mr-2" data-toggle="tooltip"
+                                                           title="" data-placement="top" data-original-title="Delete"></i> </span>
+                </div>
+                <div class="d-flex p-2 border-top"><label class="ckbox"><input
+                        type="checkbox"><span>Find an Idea</span></label> <span class="ml-auto"> <i
+                        class="fe fe-edit-2 text-primary mr-2" data-toggle="tooltip" title="" data-placement="top"
+                        data-original-title="Edit"></i> <i class="fe fe-trash-2 text-danger mr-2" data-toggle="tooltip"
+                                                           title="" data-placement="top" data-original-title="Delete"></i> </span>
+                </div>
+                <div class="d-flex p-2 border-top mb-4 border-bottom"><label class="ckbox"><input type="checkbox"><span>Project review</span></label>
+                    <span class="ml-auto"> <i class="fe fe-edit-2 text-primary mr-2" data-toggle="tooltip" title=""
+                                              data-placement="top" data-original-title="Edit"></i> <i
+                            class="fe fe-trash-2 text-danger mr-2" data-toggle="tooltip" title="" data-placement="top"
+                            data-original-title="Delete"></i> </span></div>
+                <h5 class="pt-2">Overview</h5>
+                <div class="p-2">
+                    <div class="main-traffic-detail-item">
+                        <div><span>Founder &amp; CEO</span> <span>24</span></div>
+                        <div class="progress">
+                            <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="20"
+                                 class="progress-bar progress-bar-xs wd-20p" role="progressbar"></div>
+                        </div><!-- progress --> </div>
+                    <div class="main-traffic-detail-item">
+                        <div><span>UX Designer</span> <span>1</span></div>
+                        <div class="progress">
+                            <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="15"
+                                 class="progress-bar progress-bar-xs bg-secondary wd-15p" role="progressbar"></div>
+                        </div><!-- progress --> </div>
+                    <div class="main-traffic-detail-item">
+                        <div><span>Recruitment</span> <span>87</span></div>
+                        <div class="progress">
+                            <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="45"
+                                 class="progress-bar progress-bar-xs bg-success wd-45p" role="progressbar"></div>
+                        </div><!-- progress --> </div>
+                    <div class="main-traffic-detail-item">
+                        <div><span>Software Engineer</span> <span>32</span></div>
+                        <div class="progress">
+                            <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="25"
+                                 class="progress-bar progress-bar-xs bg-info wd-25p" role="progressbar"></div>
+                        </div><!-- progress --> </div>
+                    <div class="main-traffic-detail-item">
+                        <div><span>Project Manager</span> <span>32</span></div>
+                        <div class="progress">
+                            <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="25"
+                                 class="progress-bar progress-bar-xs bg-danger wd-25p" role="progressbar"></div>
+                        </div><!-- progress --> </div>
+                </div>
+            </div>
+        </div>
+    <!-- End Sidebar Menu -->
+
+
+</div>
+
+<!--Footer-->
+<script src="./plugins/jquery/jquery.min.js"></script>
+<script src="./plugins/bootstrap/bootstrap.bundle.min.js"></script>
+<script src="./plugins/ionicons/ionicons.js"></script>
+<script src="./plugins/select2/select2.min.js"></script>
+<script src="./plugins/multipleselect/multiple-select.js"></script>
+<script src="./plugins/multipleselect/multi-select.js"></script>
+<script src="./plugins/sidebar/sidebar.js"></script>
+<script src="./plugins/perfect-scrollbar/perfect-scrollbar.min.js"></script>
+<script src="./js/sticky.js"></script>
+<script src="./js/custom.js"></script>
+<script src="./plugins/switcher/switcher.js"></script>
+<!--End Footer-->
+</body>
+</html>
